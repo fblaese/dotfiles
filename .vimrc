@@ -13,6 +13,7 @@ set autoindent "copy indent level from last line
 set smartindent "auto indent body
 set noexpandtab "indent using tabs
 set tabstop=4 "one tab is displayed as 4 spaces
+set shiftwidth=4 "indent codeblock content one tab
 
 "" invisibles
 set list
