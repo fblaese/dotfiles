@@ -3,7 +3,12 @@ syntax on
 "colorscheme monokai
 set wildmenu "use popup menu for autocompletion
 set scrolloff=7 "minimum lines to keep when scrolling
+
+"" search
 set hlsearch "highlight search
+set ignorecase
+set smartcase
+
 
 "" mouse
 set mouse=v
