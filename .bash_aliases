@@ -6,5 +6,7 @@ if [[ "$OSTYPE" == "linux-gnu" ]]; then
 	}
 fi
 
+alias scrot='scrot ~/screenshots/%Y-%m-%d_%H-%M-%S.png'
+
 # presentation stuff
 alias pvim='vim -c "colorscheme morning"'
