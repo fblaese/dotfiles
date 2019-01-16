@@ -26,7 +26,14 @@ set listchars=tab:‣\ ,trail:·,precedes:<,extends:>
 
 "" statusbar
 set ruler
-set number
+set number relativenumber
+
+"" intelligent line numbering
+augroup numbertoggle
+  autocmd!
+  autocmd BufEnter,FocusGained,InsertLeave * set relativenumber
+  autocmd BufLeave,FocusLost,InsertEnter   * set norelativenumber
+augroup END
 
 "" commands
 if has("autocmd")
