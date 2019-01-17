@@ -1,3 +1,6 @@
 [submodule ".vim/pack/dist/start/vim-airline"]
 	path = .vim/pack/dist/start/vim-airline
 	url = https://github.com/vim-airline/vim-airline.git
+[submodule ".vim/pack/dist/start/vim-gitgutter"]
+	path = .vim/pack/dist/start/vim-gitgutter
+	url = https://github.com/airblade/vim-gitgutter.git

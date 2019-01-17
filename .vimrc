@@ -42,3 +42,6 @@ endif
 
 "" vim-airline
 set ttimeoutlen=10
+
+"" vim-gitgutter
+set updatetime=100
