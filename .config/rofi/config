@@ -1,0 +1,4 @@
+rofi.combi-modi:	drun,run
+rofi.theme:			solarized
+rofi.font:			sans 11
+rofi.modi:			combi
