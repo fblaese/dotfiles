@@ -15,7 +15,7 @@ height = 30
 background = ${colors.background}
 foreground = ${colors.foreground}
 
-;underline-size = 5
+;underline-size = 2
 ;underline-color = #eee
 
 padding-left = 2
@@ -31,10 +31,10 @@ tray-position = right
 tray-padding = 4
 ;tray-background = #66333333
 
-font-0 = sans:size=9;0
-font-1 = Font Awesome 5 Free Solid:pixelsize=9;0
-font-2 = Font Awesome 5 Free:pixelsize=9;0
-font-3 = Font Awesome 5 Brands:pixelsize=9;0
+font-0 = sans:size=9;1
+font-1 = Font Awesome 5 Free Solid:pixelsize=9;1
+font-2 = Font Awesome 5 Free:pixelsize=9;1
+font-3 = Font Awesome 5 Brands:pixelsize=9;1
 
 cursor-click = pointer
 cursor-scroll = ns-resize
@@ -61,18 +61,18 @@ type = internal/bspwm
 label-focused = %index%
 label-focused-background = ${colors.background-alt}
 label-focused-underline= ${colors.primary}
-label-focused-padding = 2
+label-focused-padding = 3
 
 label-occupied = %index%
-label-occupied-padding = 2
+label-occupied-padding = 3
 
 label-urgent = %index%!
 label-urgent-background = ${colors.alert}
-label-urgent-padding = 2
+label-urgent-padding = 3
 
 label-empty = %index%
 label-empty-foreground = ${colors.foreground-alt}
-label-empty-padding = 2
+label-empty-padding = 3
 
 [module/i3]
 type = internal/i3
@@ -119,7 +119,7 @@ label = %percentage:2%%
 [module/cpu]
 type = internal/cpu
 interval = 2
-format-prefix = " "
+format-prefix = "  "
 format-prefix-foreground = ${colors.foreground-alt}
 label = %percentage:2%%
 
