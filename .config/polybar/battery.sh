@@ -32,5 +32,5 @@ charge=$(cat $BATTERIES | awk -f <(get_awk_source))
 if [ $charge -lt 10 ]; then
 	exit 0
 else
-	exit 0
+	exit 1
 fi
