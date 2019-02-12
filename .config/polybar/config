@@ -25,7 +25,7 @@ module-margin-right = 5
 
 modules-left = i3
 ;modules-center = xwindow
-modules-right = filesystem xbacklight pulseaudio wlan eth battery0 battery1 memory cpu temperature date powermenu
+modules-right = batempty filesystem xbacklight pulseaudio wlan eth battery0 battery1 memory cpu temperature date powermenu
 
 tray-position = right
 tray-padding = 4
@@ -257,6 +257,15 @@ animation-charging-framerate = 600
 
 ramp-capacity-foreground = ${colors.foreground-alt}
 animation-charging-foreground = ${colors.foreground-alt}
+
+[module/batempty]
+type = custom/script
+exec = echo "Empty Batteries!"
+exec-if = ~/.config/polybar/battery.sh
+
+format-background = ${colors.alert}
+format-padding = 8
+interval = 60
 
 [module/temperature]
 type = internal/temperature
