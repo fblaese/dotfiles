@@ -1,6 +1,6 @@
 #!/bin/sh
 revert() {
-	xset -dpms
+	xset dpms 300 300 300
 }
 trap revert HUP INT TERM
 xset dpms 10 10 10
