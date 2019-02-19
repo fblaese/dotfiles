@@ -10,8 +10,9 @@ exec_always --no-startup-id sh -c "pidof nm-applet || nm-applet"
 exec_always --no-startup-id nitrogen --restore
 
 # Screen locking
-bindsym $mod+l exec ~/.config/i3/scripts/lock.sh
-#exec --no-startup-id xset s 10 5
+exec --no-startup-id xset s 300
+exec --no-startup-id xset dpms 300 300 300
+bindsym $mod+l exec xset s activate
 exec --no-startup-id xss-lock -l ~/.config/i3/scripts/i3lock.sh
 
 # Pulse Audio controls
