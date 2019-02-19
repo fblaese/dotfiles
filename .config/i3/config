@@ -15,6 +15,9 @@ exec --no-startup-id xset dpms 300 300 300
 bindsym $mod+l exec xset s activate
 exec --no-startup-id xss-lock -l ~/.config/i3/scripts/i3lock.sh
 
+# Standby
+bindsym $mod+p exec systemctl suspend
+
 # Pulse Audio controls
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +5% #increase sound volume
 bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -5% #decrease sound volume
