@@ -206,7 +206,7 @@ format-full = <ramp-capacity> <label-full>
 
 label-charging = %percentage:2%% (%time%)
 label-discharging = %percentage:2%% (%time%)
-label-full = %percentage:2%% (%time%)
+label-full = %percentage:2%%
 
 time-format = %H:%M
 
@@ -238,7 +238,7 @@ format-full = <ramp-capacity> <label-full>
 
 label-charging = %percentage:2%% (%time%)
 label-discharging = %percentage:2%% (%time%)
-label-full = %percentage:2%% (%time%)
+label-full = %percentage:2%%
 
 time-format = %H:%M
 
