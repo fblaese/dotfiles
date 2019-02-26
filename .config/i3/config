@@ -44,6 +44,9 @@ bindsym Ctrl+Shift+4 exec scrot -s ~/screenshots/%Y-%m-%d_%H-%M-%S.png
 # move the whole workspace to the next output
 bindsym $mod+x move workspace to output right
 
+# force float some windows
+for_window [class="Org.gnome.Characters"] floating enable
+
 # startup software
 assign [class="Thunderbird"] $ws1
 assign [class="Riot"] $ws1
