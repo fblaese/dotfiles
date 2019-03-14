@@ -8,5 +8,7 @@ fi
 
 alias scrot='scrot ~/screenshots/%Y-%m-%d_%H-%M-%S.png'
 
+alias gitroot='cd $(git rev-parse --show-toplevel)'
+
 # presentation stuff
 alias pvim='vim -c "colorscheme morning"'
