@@ -9,6 +9,9 @@ exec_always --no-startup-id sh -c "pidof compton || compton -bf -I 0.06 -O 0.06"
 exec_always --no-startup-id sh -c "pidof nm-applet || nm-applet"
 exec_always --no-startup-id nitrogen --restore
 
+# launch gpg agent
+exec --no-startup-id gpgconf --launch gpg-agent
+
 # Screen locking
 exec --no-startup-id xset s 300
 exec --no-startup-id xset dpms 300 300 300
