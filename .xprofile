@@ -1,6 +1,6 @@
-# start ssh agent
-killall -q ssh-agent; while pgrep -u $UID -x ssh-agent >/dev/null; do sleep 1; done;
-eval `ssh-agent`
+# start gpg agent
+export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
+gpgconf --launch gpg-agent
 
 # firefox native scrolling
 export MOZ_USE_XINPUT2=1
