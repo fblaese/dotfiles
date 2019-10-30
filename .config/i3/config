@@ -82,7 +82,7 @@ focus_follows_mouse no
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec gnome-terminal
+bindsym $mod+Return exec gnome-terminal --working-directory=$(xdotool getactivewindow getwindowname | cut -d: -f2 | sed "s/\~/\/home\/fbl/")
 
 # kill focused window
 bindsym $mod+Shift+q kill
