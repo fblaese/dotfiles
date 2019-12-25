@@ -23,6 +23,7 @@ set shiftwidth=4 "indent codeblock content one tab
 "" invisibles
 set list
 set listchars=tab:‣\ ,trail:·,precedes:<,extends:>
+highlight SpecialKey ctermfg=darkgrey
 
 "" statusbar
 set ruler
