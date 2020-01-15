@@ -1,0 +1,17 @@
+[cache]
+AccountIdentity=64225361
+DisconnectedModeEnabled=false
+IntervalCheckEnabled=false
+IntervalCheckTime=60
+TrashCollection=103
+TrashCollectionMigrated=true
+UseDefaultIdentity=false
+
+[idle]
+IdleRidPath=.INBOX,imap://deus@sgstbr.de@mail.sgstbr.de/
+
+[network]
+Authentication=7
+ImapServer=mail.sgstbr.de
+SubscriptionEnabled=true
+UserName=deus@sgstbr.de

@@ -1,0 +1,12 @@
+[ConfigDialog]
+Size=590,481
+
+[General]
+defaultUsername=fbl
+displayName=ownCloud
+limitSyncRange=false
+remoteUrls=$default$|CalDav|https://cl.sgstbr.de/remote.php/dav/,$default$|CardDav|https://cl.sgstbr.de/remote.php/dav/
+settingsVersion=3
+
+[UrlConfigurationDialog]
+Size=300,458
