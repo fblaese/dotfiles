@@ -10,3 +10,9 @@
 [submodule ".zsh/zsh-autosuggestions"]
 	path = .zsh/zsh-autosuggestions
 	url = https://github.com/zsh-users/zsh-autosuggestions.git
+[submodule ".vim/pack/dist/start/indentLine"]
+	path = .vim/pack/dist/start/indentLine
+	url = https://github.com/Yggdroot/indentLine.git
+[submodule ".vim/pack/dist/start/gruvbox"]
+	path = .vim/pack/dist/start/gruvbox
+	url = https://github.com/morhetz/gruvbox.git

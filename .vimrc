@@ -1,6 +1,17 @@
 "" looks
 syntax on
-"colorscheme monokai
+
+set background=dark
+let g:gruvbox_italic='1'
+"let g:gruvbox_number_column='bg1'
+let g:gruvbox_contrast_dark='hard'
+colorscheme gruvbox
+
+set cursorline
+
+"let g:indentLine_char = '|'
+
+"" behaviour
 set wildmenu "use popup menu for autocompletion
 set scrolloff=7 "minimum lines to keep when scrolling
 
@@ -8,7 +19,6 @@ set scrolloff=7 "minimum lines to keep when scrolling
 set hlsearch "highlight search
 set ignorecase
 set smartcase
-
 
 "" mouse
 set mouse=v
