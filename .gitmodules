@@ -16,3 +16,6 @@
 [submodule ".vim/pack/dist/start/gruvbox"]
 	path = .vim/pack/dist/start/gruvbox
 	url = https://github.com/morhetz/gruvbox.git
+[submodule ".vim/pack/dist/start/vim-sleuth"]
+	path = .vim/pack/dist/start/vim-sleuth
+	url = https://github.com/tpope/vim-sleuth.git
