@@ -88,7 +88,7 @@ bindsym $mod+Return exec gnome-terminal
 bindsym $mod+Shift+q kill
 
 # rofi (application launcher)
-bindsym $mod+g exec --no-startup-id rofi -combi-modi "window#drun#run" -show combi
+bindsym $mod+g exec --no-startup-id rofi -combi-modi "drun#run" -show combi
 
 # change focus
 #bindsym $mod+j focus left
