@@ -46,6 +46,11 @@ augroup numbertoggle
   autocmd BufLeave,FocusLost,InsertEnter   * set norelativenumber
 augroup END
 
+"" show conceald text when entering insert mode
+let g:indentLine_setConceal = 0
+set concealcursor=nc
+set conceallevel=2
+
 "" commands
 if has("autocmd")
 	au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
