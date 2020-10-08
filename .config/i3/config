@@ -49,14 +49,14 @@ for_window [class="Org.gnome.Characters"] floating enable
 
 # startup software
 assign [class="Thunderbird"] $ws1
-assign [class="Riot"] $ws1
+assign [class="Element"] $ws1
 assign [class="TelegramDesktop"] $ws1
 assign [class="Dino"] $ws1
 assign [class="KeeWeb"] $ws2
 for_window [class="Spotify"] move to workspace $ws8
 assign [window_role="presentation"] $ws10
 
-exec --no-startup-id i3-msg "workspace $ws1; append_layout ~/.config/i3/ws1.json; exec thunderbird; exec riot-desktop; exec dino" #exec telegram-desktop"
+exec --no-startup-id i3-msg "workspace $ws1; append_layout ~/.config/i3/ws1.json; exec thunderbird; exec element-desktop; exec dino" #exec telegram-desktop"
 exec --no-startup-id i3-msg "workspace $ws2; append_layout ~/.config/i3/ws2.json; exec chromium"
 
 exec --no-startup-id owncloud
