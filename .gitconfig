@@ -1,0 +1,10 @@
+[user]
+	email = fabian@blaese.de
+	name = Fabian Bläse
+[sendemail]
+	smtpEncryption = ssl
+	smtpServer = mail.sgstbr.de
+	smtpUser = fabian@blaese.de
+	smtpServerPort = 465
+[pull]
+	rebase = true
