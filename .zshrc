@@ -7,10 +7,6 @@ bindkey "^[[2~" ""
 bindkey "^[[3~" delete-char
 bindkey "^[[1;5D" backward-word
 bindkey "^[[1;5C" forward-word
-bindkey -s "^[[5~" ""
-bindkey -s "^[[6~" ""
-
-bindkey '^R' history-incremental-search-backward
 #bindkey "e[5~" beginning-of-history
 #bindkey "e[6~" end-of-history
 #bindkey "e[3~" delete-char
@@ -44,22 +40,14 @@ zstyle :compinstall filename '/home/fbl/.zshrc'
 autoload -Uz compinit
 compinit
 
-source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
-ZSH_AUTOSUGGEST_STRATEGY=(match_prev_cmd)
+source .zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+ZSH_AUTOSUGGEST_STRATEGY=(match_prev_cmd completion)
 
 
 export EDITOR=vim
 
 alias ls='ls --color=auto'
 PS1='%B%F{green}%n@%m%f%b:%B%F{blue}%~%f%b$ '
-
-## Window title
-case ${TERM} in
-  xterm*|rxvt*|Eterm|aterm|kterm|gnome*)
-    precmd() { printf "\e]0;${USER}@${HOST}:${PWD/#$HOME/~}\a" }
-    ;;
-esac
-
 
 export LESS="--RAW-CONTROL-CHARS"
 [[ -f ~/.config/less/.less_rc ]] && . ~/.config/less/.less_rc
