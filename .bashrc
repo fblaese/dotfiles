@@ -32,8 +32,8 @@ export LIBVIRT_DEFAULT_URI="qemu:///system"
 
 # fuzzy match with fzf
 if [[ "$OSTYPE" == "darwin"* ]]; then
-	. /usr/local/Cellar/fzf/0.21.1/shell/key-bindings.bash
-	. /usr/local/Cellar/fzf/0.21.1/shell/completion.bash
+	. /usr/local/Cellar/fzf/0.24.4/shell/key-bindings.bash
+	. /usr/local/Cellar/fzf/0.24.4/shell/completion.bash
 elif [[ "$OSTYPE" == "linux-gnu" ]]; then
 	. /usr/share/fzf/key-bindings.bash
 	. /usr/share/fzf/completion.bash
