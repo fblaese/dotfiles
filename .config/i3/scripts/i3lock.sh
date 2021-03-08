@@ -10,13 +10,14 @@ i3lock_options="-f -c 000000"
 
 # Run before starting the locker
 pre_lock() {
-    xset dpms 10 10 10
+    xset dpms 20 20 20
     return
 }
 
 # Run after the locker exits
 post_lock() {
     xset dpms 300 300 300
+    xset -dpms
     return
 }
 

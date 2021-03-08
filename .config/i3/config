@@ -9,10 +9,10 @@ exec_always --no-startup-id sh -c "pidof nm-applet || nm-applet"
 exec_always --no-startup-id nitrogen --restore
 
 # Screen locking
-exec --no-startup-id xset s 300
-exec --no-startup-id xset dpms 300 300 300
+exec --no-startup-id xset s 300 10
+exec --no-startup-id xset -dpms
 bindsym $mod+l exec xset s activate
-exec --no-startup-id xss-lock -l ~/.config/i3/scripts/i3lock.sh
+exec --no-startup-id xss-lock -l -n ~/.config/i3/scripts/prelock.sh ~/.config/i3/scripts/i3lock.sh
 
 # Standby
 bindsym $mod+p exec systemctl suspend
