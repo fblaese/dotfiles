@@ -16,3 +16,5 @@ function gitroot() {
 # presentation stuff
 alias pvim='vim -c "colorscheme morning"'
 alias pdfpc='pdfpc -g'
+
+alias ip='ip --color=auto'

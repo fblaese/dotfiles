@@ -47,6 +47,7 @@ fi
 # don't put duplicate lines or lines starting with space in the history.
 HISTCONTROL=ignoreboth
 HISTSIZE=10000
+HISTFILESIZE=10000
 
 # Disable per-terminal-session command history
 export SHELL_SESSION_HISTORY=0
