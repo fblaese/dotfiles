@@ -43,8 +43,9 @@ bindsym Shift+XF86AudioRaiseVolume exec --no-startup-id playerctl next
 bindsym Shift+XF86AudioLowerVolume exec --no-startup-id playerctl previous
 
 # Screenshots
-bindsym Ctrl+Shift+3 exec scrot ~/screenshots/%Y-%m-%d_%H-%M-%S.png
-bindsym Ctrl+Shift+4 exec scrot -s ~/screenshots/%Y-%m-%d_%H-%M-%S.png
+#bindsym Ctrl+Shift+3 exec scrot ~/screenshots/%Y-%m-%d_%H-%M-%S.png
+#bindsym Ctrl+Shift+4 exec scrot -s ~/screenshots/%Y-%m-%d_%H-%M-%S.png
+bindsym Ctrl+Shift+4 exec flameshot gui
 
 # move the whole workspace to the next output
 bindsym $mod+x focus output right
