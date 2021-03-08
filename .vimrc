@@ -5,6 +5,7 @@ set background=dark
 let g:gruvbox_italic='1'
 "let g:gruvbox_number_column='bg1'
 let g:gruvbox_contrast_dark='hard'
+let g:gruvbox_guisp_fallback='bg'
 colorscheme gruvbox
 
 set cursorline
@@ -22,6 +23,9 @@ set smartcase
 
 "" mouse
 set mouse=v
+
+"" persistent registers
+set viminfo='100,<1000,s100,h
 
 "" indentaion
 set autoindent "copy indent level from last line
@@ -60,7 +64,15 @@ endif
 set ttimeoutlen=10
 
 "" vim-gitgutter
-set updatetime=100
+set updatetime=500
+
+"" omni-completion
+set omnifunc=syntaxcomplete#Complete
+
+""
+autocmd Filetype gitcommit setlocal textwidth=72 colorcolumn=+1
+autocmd Filetype tex setlocal spell spelllang=de
+autocmd Filetype markdown setlocal spell spelllang=de
 
 "" vim-easy-align
 xmap ga <Plug>(EasyAlign)
