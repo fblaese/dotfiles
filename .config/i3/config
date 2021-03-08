@@ -53,6 +53,7 @@ bindsym $mod+shift+x move workspace to output right
 
 # force float some windows
 for_window [class="Org.gnome.Characters"] floating enable
+for_window [class="Thunderbird" instance="Calendar"] floating enable
 
 # startup software
 assign [class="Thunderbird"] $ws1
