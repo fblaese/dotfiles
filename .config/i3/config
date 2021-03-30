@@ -8,6 +8,7 @@ set $alt Mod1
 # launch tools
 exec_always --no-startup-id sh -c "pidof nm-applet || nm-applet"
 exec_always --no-startup-id nitrogen --restore
+exec_always --no-startup-id sh -c "pidof redshift || redshift -l 49:11"
 
 # Screen locking
 exec --no-startup-id xset s 300 10
