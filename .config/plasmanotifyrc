@@ -1,0 +1,16 @@
+[Applications][chromium]
+Seen=true
+
+[Applications][electron]
+Seen=true
+ShowInHistory=false
+ShowPopups=false
+
+[Applications][im.dino.dino]
+Seen=true
+
+[Applications][org.gnome.nautilus]
+Seen=true
+
+[Applications][thunderbird]
+Seen=true
