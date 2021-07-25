@@ -25,7 +25,7 @@ module-margin-right = 5
 
 modules-left = i3
 ;modules-center = xwindow
-modules-right = batempty filesystem xbacklight pulseaudio wlan eth battery0 battery1 memory cpu temperature date powermenu
+modules-right = batempty filesystem backlight pulseaudio wlan eth battery0 memory cpu temperature date powermenu
 
 tray-position = right
 tray-padding = 4
@@ -108,8 +108,9 @@ label-urgent = %name%
 label-urgent-background = ${module/bspwm.label-urgent-background}
 label-urgent-padding = ${module/bspwm.label-urgent-padding}
 
-[module/xbacklight]
-type = internal/xbacklight
+[module/backlight]
+type = internal/backlight
+card = intel_backlight
 
 format = <label>
 format-prefix = "  "
@@ -270,7 +271,8 @@ interval = 60
 
 [module/temperature]
 type = internal/temperature
-thermal-zone = 0
+;thermal-zone = 12
+hwmon-path = ${env:HWMON_CORETEMP}
 warn-temperature = 70
 
 format = <ramp> <label>

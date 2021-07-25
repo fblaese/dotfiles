@@ -11,6 +11,3 @@ export QT_QPA_PLATFORMTHEME="qt5ct"
 
 # remap Menu Button to Super
 xmodmap -e "keycode 135 = Super_R"
-
-# set keyboard repeat rate
-xset r rate 400 25

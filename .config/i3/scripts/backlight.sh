@@ -1,11 +1,13 @@
 #!/bin/sh
 
-val=$(printf "%.0f" $(xbacklight))
+val=$(printf "%.0f" $(light -G))
 
 if [ $val -ge 40 ]; then
 	step=10
-else
+elif [ $val -ge 10 ]; then
 	step=5
+else
+	step=1
 fi
 
 if [ $1 == "dec" ]; then
@@ -15,4 +17,5 @@ else
 fi
 
 
-xbacklight -set $val -time 200
+#xbacklight -set $val -time 200
+light -S $val

@@ -8,13 +8,19 @@ set $alt Mod1
 # launch tools
 exec_always --no-startup-id sh -c "pidof nm-applet || nm-applet"
 exec_always --no-startup-id nitrogen --restore
-exec_always --no-startup-id sh -c "pidof redshift || redshift -l 49:11"
+exec_always --no-startup-id sh -c "pidof redshift || redshift -l 49:11 -m vidmode"
+
+# Keyboard repeate
+exec_always --no-startup-id xset r rate 400 25
 
 # Screen locking
-exec --no-startup-id xset s 300 10
-exec --no-startup-id xset -dpms
+exec_always --no-startup-id xset s 300 10
+exec_always --no-startup-id xset -dpms
 bindsym $mod+l exec xset s activate
 exec --no-startup-id xss-lock -l -n ~/.config/i3/scripts/prelock.sh ~/.config/i3/scripts/i3lock.sh
+
+# compositor
+exec_always --no-startup-id sh -c "killall picom; picom --config /dev/null --experimental-backend --backend glx --vsync --daemon" ## --transparent-clipping is broken
 
 # Standby
 bindsym $mod+p exec systemctl suspend
@@ -237,4 +243,4 @@ bindsym $mod+r mode "resize"
 #bar {
 #        status_command i3status
 #}
-exec_always --no-startup-id sh -c 'killall -q polybar; while pgrep -u $UID -x polybar >/dev/null; do sleep 1; done;  for m in $(polybar --list-monitors | cut -d":" -f1); do (MONITOR=$m polybar -r top &); done'
+exec_always --no-startup-id sh -c 'killall -q polybar; while pgrep -u $UID -x polybar >/dev/null; do sleep 1; done;  for m in $(polybar --list-monitors | cut -d":" -f1); do (HWMON_CORETEMP=`echo /sys/devices/platform/coretemp.0/hwmon/hwmon*/temp1_input` MONITOR=$m polybar -r top &); done'
