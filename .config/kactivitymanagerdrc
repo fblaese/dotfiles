@@ -1,0 +1,11 @@
+[activities]
+2f5f83ac-b32a-41eb-915c-d2f1dfc1b19a=Arbeiten
+a5b4d3ee-3241-4bff-bef0-03092e618942=Studieren
+d8b33eea-ad7a-4c2f-965c-21d269649e73=Default
+
+[activities-icons]
+2f5f83ac-b32a-41eb-915c-d2f1dfc1b19a=activities
+a5b4d3ee-3241-4bff-bef0-03092e618942=activities
+
+[main]
+currentActivity=d8b33eea-ad7a-4c2f-965c-21d269649e73
